@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Générateur de mots de passe temporaires gratuits et sécurisés - Free and secure temporary password generator - Generador de contraseñas temporales gratis y seguro">
+    <meta name="keywords" content="générateur de mot de passe, mot de passe temporaire, password generator, temporary password, generador de contraseñas, contraseña temporal, generatore di password, senha temporária, Passwort-Generator, temporäres Passwort">
+    <title>TempPassGenix - Générateur de Mot de Passe Sécurisé</title>
+    <!-- Favicon (logo dans l'onglet) -->
+    <link rel="icon" type="image/jpeg" href="secure_password_generator.jpeg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand">TempPassGenix</div>
+        <button id="themeToggle" onclick="toggleTheme()">☀️</button>
+    </nav>
+    <div class="container">
+        <h1>TempPassGenix</h1>
+        <p>Génère un mot de passe sécurisé en un clic !</p>
+        
+        <div class="options">
+            <label>Longueur :</label>
+            <input type="radio" name="length" value="8" checked> 8
+            <input type="radio" name="length" value="12"> 12
+            <input type="radio" name="length" value="16"> 16
+        </div>
+
+        <input type="text" id="passwordOutput" readonly placeholder="Ton mot de passe apparaîtra ici">
+        <button onclick="generatePassword()">Générer</button>
+        <button onclick="copyPassword()">Copier</button>
+        <!-- Paragraphe SEO -->
+        <p class="seo-text">Générateur de mots de passe sécurisés et gratuits pour vos besoins temporaires - Free secure password generator - Generador de contraseñas seguro</p>
+    </div>
+    <script src="script.js"></script>
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'fr', autoDisplay: false}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <div id="google_translate_element" style="display:none;"></div>
+</body>
+</html>

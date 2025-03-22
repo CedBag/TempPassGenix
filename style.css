@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+    width: 100%;
+    background: #007BFF;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 30px; /* Taille du logo, ajuste selon ton image */
+    height: 30px;
+    margin-right: 10px;
+}
+
+#themeToggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.options label {
+    margin-right: 10px;
+}
+
+#passwordOutput {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.seo-text {
+    font-size: 14px;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* Mode sombre */
+body.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark .navbar {
+    background: #222;
+}
+
+body.dark .container {
+    background: #444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark h1 {
+    color: #fff;
+}
+
+body.dark p {
+    color: #ccc;
+}
+
+body.dark .seo-text {
+    color: #aaa;
+}
+
+body.dark #passwordOutput {
+    background: #555;
+    border-color: #666;
+    color: #fff;
+}
