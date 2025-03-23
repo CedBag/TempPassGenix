@@ -2,6 +2,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
+    padding-bottom: 60px;
+    min-height: 100vh;
+    position: relative;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -22,10 +25,12 @@ body {
 .brand {
     font-size: 20px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 .logo {
-    width: 30px; /* Taille du logo, ajuste selon ton image */
+    width: 30px;
     height: 30px;
     margin-right: 10px;
 }
@@ -96,6 +101,70 @@ button:hover {
     margin-top: 20px;
 }
 
+/* Section Historique */
+.history {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.history h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.history-note {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+#passwordHistory {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+#passwordHistory li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#passwordHistory li button {
+    background: #ff4444;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+#passwordHistory li button:hover {
+    background: #cc0000;
+}
+
+/* Footer */
+.footer {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
 /* Mode sombre */
 body.dark {
     background-color: #333;
@@ -111,11 +180,11 @@ body.dark .container {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-body.dark h1 {
+body.dark h1, body.dark .history h2 {
     color: #fff;
 }
 
-body.dark p {
+body.dark p, body.dark .history-note {
     color: #ccc;
 }
 
@@ -127,4 +196,12 @@ body.dark #passwordOutput {
     background: #555;
     border-color: #666;
     color: #fff;
+}
+
+body.dark #passwordHistory li {
+    background: #555;
+}
+
+body.dark .footer {
+    background: #222;
 }
