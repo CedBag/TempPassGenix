@@ -6,13 +6,14 @@
     <meta name="description" content="Générateur de mots de passe temporaires gratuits et sécurisés - Free and secure temporary password generator - Generador de contraseñas temporales gratis y seguro">
     <meta name="keywords" content="générateur de mot de passe, mot de passe temporaire, password generator, temporary password, generador de contraseñas, contraseña temporal, generatore di password, senha temporária, Passwort-Generator, temporäres Passwort">
     <title>TempPassGenix - Générateur de Mot de Passe Sécurisé</title>
-    <!-- Favicon (logo dans l'onglet) -->
     <link rel="icon" type="image/jpeg" href="secure_password_generator.jpeg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="brand">TempPassGenix</div>
+        <div class="brand">
+            <img src="secure_password_generator.jpeg" alt="Logo TempPassGenix" class="logo"> TempPassGenix
+        </div>
         <button id="themeToggle" onclick="toggleTheme()">☀️</button>
     </nav>
     <div class="container">
@@ -29,11 +30,21 @@
         <input type="text" id="passwordOutput" readonly placeholder="Ton mot de passe apparaîtra ici">
         <button onclick="generatePassword()">Générer</button>
         <button onclick="copyPassword()">Copier</button>
-        <!-- Paragraphe SEO -->
+
+        <!-- Section Historique -->
+        <div class="history">
+            <h2>Historique des mots de passe</h2>
+            <p class="history-note">Les mots de passe sont stockés localement dans votre navigateur (max. 10). Ils seront supprimés si vous videz le cache.</p>
+            <ul id="passwordHistory"></ul>
+            <button onclick="clearHistory()">Vider l'historique</button>
+        </div>
+
         <p class="seo-text">Générateur de mots de passe sécurisés et gratuits pour vos besoins temporaires - Free secure password generator - Generador de contraseñas seguro</p>
     </div>
+    <footer class="footer">
+        <p>© 2025 TempPassGenix. Tous droits réservés. | <a href="index.html">Retour à l'accueil</a></p>
+    </footer>
     <script src="script.js"></script>
-    <!-- Google Translate Script -->
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({pageLanguage: 'fr', autoDisplay: false}, 'google_translate_element');
